@@ -44,6 +44,40 @@ This application is built with a focus on maintainability, scalability, and test
 | **Firebase** | Backend-as-a-Service (BaaS) for optional Cloud Synchronization, Authentication, and scalable data storage (Firestore). |
 | **Platform APIs** | Utilizing native device services for high-quality voice recording, local notifications, and biometric security. |
 
+* **Key Highlights:**
+**Core Architecture Features:**
+
+Feature-based modular design - Each feature (reminders, journal, voice recording, legacy mode) is self-contained with its own domain, data, and presentation layers
+Clean Architecture implementation - Clear separation between business logic, data handling, and UI
+Riverpod state management - Organized providers for each feature's different concerns
+
+**Bengali-Specific Support:**
+
+Dedicated Bengali typography and fonts (SolaimanLipi, Kalpurush)
+Bengali date conversion utilities
+Bengali voice transcription service
+Comprehensive localization setup with ARB files
+
+**Offline-First Design:**
+
+Local data sources for every feature
+Secure local storage with encryption
+Database migration system
+Sync mechanisms for backup and restore
+
+**Special Features Implementation:**
+
+Voice Recording: Complete module with recording, playback, and transcription
+Legacy Mode: Family tree management and story sharing
+Emotion Tags: Integrated into reminder system
+Modular Widgets: Configurable home screen widgets (memory card, voice note, reminder chip)
+
+**Firebase Integration:**
+
+Structured Firebase configuration
+Cloud Functions for backend operations
+Firestore rules and indexes
+Push notification support
 ---
 
 ## 📁 Folder Structure
